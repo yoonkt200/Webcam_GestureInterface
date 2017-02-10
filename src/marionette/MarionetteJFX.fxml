@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="marionette.MainController">
+   <right>
+      <Slider id="volumeSlider" fx:id="volumeSlider" blockIncrement="5.0" minorTickCount="5" orientation="VERTICAL" showTickLabels="false" showTickMarks="false" value="50.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="100.0" top="100.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets right="50.0" />
+         </BorderPane.margin>
+      </Slider>
+   </right>
+   <center>
+      <MediaView fx:id="resultView" fitHeight="350.0" fitWidth="550.0" BorderPane.alignment="CENTER" />
+   </center>
+   <!-- <top>
+      <CheckBox fx:id="activatedChk" mnemonicParsing="false" text="Activated" BorderPane.alignment="CENTER_RIGHT">
+         <BorderPane.margin>
+            <Insets right="40.0" top="30.0" />
+         </BorderPane.margin>
+      </CheckBox>
+   </top> -->
+  <bottom>
+      <HBox id="mainHbox" fx:id="mainHbox" alignment="CENTER" fillHeight="false" maxHeight="100.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="120.0" spacing="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <Group id="mediaGroup1">
+               <children>
+                  <MediaView fx:id="mediaView1" fitHeight="70.0" fitWidth="90.0" />
+                  <Label id="mediaText" fx:id="mediaText1" alignment="CENTER" layoutY="80.0" minWidth="90.0" text="Label" />
+               </children>
+            </Group>
+            <Group>
+               <children>
+                  <MediaView fx:id="mediaView2" fitHeight="70.0" fitWidth="90.0" />
+                  <Label id="mediaText" fx:id="mediaText2" alignment="CENTER" layoutY="80.0" minWidth="90.0" text="Label" />
+               </children>
+            </Group>
+            <Group>
+               <children>
+                  <MediaView fx:id="mediaView3" fitHeight="70.0" fitWidth="90.0" />
+                  <Label id="mediaText" fx:id="mediaText3" alignment="CENTER" layoutY="80.0" minWidth="90.0" text="Label" />
+               </children>
+            </Group>
+            <Group>
+               <children>
+                  <MediaView fx:id="mediaView4" fitHeight="70.0" fitWidth="90.0" />
+                  <Label id="mediaText" fx:id="mediaText4" alignment="CENTER" layoutY="80.0" minWidth="90.0" text="Label" />
+               </children>
+            </Group>
+            <Group>
+               <children>
+                  <MediaView fx:id="mediaView5" fitHeight="70.0" fitWidth="90.0" />
+                  <Label id="mediaText" fx:id="mediaText5" alignment="CENTER" layoutY="80.0" minWidth="90.0" text="Label" />
+               </children>
+            </Group>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>
