@@ -1,4 +1,4 @@
-# Webcam_GestureInterface
+# Application for Paper(webcam-gestureinterface research)
 
 ----------------------------------------
 
